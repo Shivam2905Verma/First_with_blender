@@ -103,6 +103,7 @@ canvas {
   flex-direction: column;
   align-items: center;
   gap: 0.1rem;
+  transform: translate(-50% , 0%);
 }
 
 .midButtons {
@@ -180,4 +181,16 @@ button {
 
 .hidden {
   display: none;
+}
+
+.upperArrow, .rightArrow, .leftArrow, .downArrow, .fas, .fab, .far {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Old versions of Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  
+  touch-action: none;          /* Prevents browser from scrolling when you hold the button */
+  cursor: pointer;             /* Makes it look like a button on desktop */
 }

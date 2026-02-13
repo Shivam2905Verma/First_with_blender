@@ -453,8 +453,9 @@ music.addEventListener("click", () => {
 });
 
 window.addEventListener("pointermove", onMouseMove);
+window.addEventListener("pointerdown", onMouseMove)
 window.addEventListener("keydown", input);
-window.addEventListener("click", () => onClick(intersectObject));
+window.addEventListener("pointerup", () => onClick(intersectObject));
 window.addEventListener("resize", function () {
   size.width = window.innerWidth;
   size.height = window.innerHeight;
