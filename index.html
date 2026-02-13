@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first-with-blender</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Top bar -->
+      <div class="navBar">
+        <div class="music navBarItem"><i class="fa-solid fa-music"></i></div>
+        <div class="dayNigth navBarItem"><i class="fa-solid fa-sun"></i></div>
+      </div>
+
+      <!-- Project show case box -->
+      <div class="detail hidden">
+        <div class="detail-box">
+          <div class="detail-top">
+            <h1 class="detail-top-heading">Project 1</h1>
+            <button class="detail-hide-btn">Exit</button>
+          </div>
+          <div class="link">
+            <a class="detail-box-link" target="_blank" href="#">aaa</a>
+          </div>
+          <h3 class="detail-box-about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quis
+            fugiat ab excepturi? Eius perferendis doloribus sint temporibus
+            earum rem laborum quia facere cumque iste, ex debitis possimus,
+            dolores voluptatibus.
+          </h3>
+        </div>
+      </div>
+
+      <!-- Mobile Buttons -->
+      <div class="mobileBtns">
+        <div class="upperArrow mobileBtn"><i class="fa-solid fa-square-caret-up"></i></div>
+        <div class="midButtons">
+          <div class="rightArrow mobileBtn"><i class="fa-solid fa-square-caret-left"></i></div>
+          <div class="leftArrow mobileBtn"><i class="fa-solid fa-square-caret-right"></i></div>
+        </div>
+        <div class="downArrow mobileBtn"><i class="fa-solid fa-square-caret-down"></i></div>
+      </div>
+
+      <!-- Loading screen -->
+      <div class="loadingScreen">
+        <div class="enterPark">Enter Park</div>
+        <div class="instructions">
+          <p>Use arrow keys or w,a,s,d to move the character</p>
+          <p>Use r to respawn the character</p>
+        </div>
+      </div>
+
+      <!-- canavs -->
+      <canvas id="canvas"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

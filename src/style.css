@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.navBar {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  right: 2%;
+  top: 2%;
+}
+
+.navBarItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #ffada0;
+  border: 2px solid #333333;
+  cursor: pointer;
+}
+
+.navBarItem i {
+  font-size: 1.2rem;
+}
+
+.loadingScreen {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #333333;
+  background-color: #ad8770;
+  font-family: monospace;
+}
+
+.enterPark {
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all ease 0.3s;
+}
+
+.enterPark:hover {
+  background-color: white;
+  color: #ad8770;
+}
+
+.instructions {
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+}
+
+.mobileBtns {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.midButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.mobileBtn {
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #717cac;
+}
+
+.mobileBtn i {
+  pointer-events: none;
+}
+
+.detail {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-box {
+  width: 100%;
+  max-width: 700px;
+  background-color: #feada1;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+.detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-top h1 {
+  color: #1a1a2e;
+}
+
+h3,
+.link {
+  margin-top: 1rem;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about {
+  color: #333333;
+}
+
+button {
+  padding: 0.2rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+  background-color: #fde2e0;
+}
+
+.hidden {
+  display: none;
+}
