@@ -200,17 +200,18 @@ const detailContent = {
   frame1: {
     title: "Minecraft Game",
     link: "https://mine-craft-flax.vercel.app/",
-    description: "this is mincraft game",
+    description:
+      "In this project, I learned how to implement physics, generate infinite terrain using chunk systems, and create realistic hills and valleys with Simplex Noise. I also added clouds, world generation logic, and optimized performance for smooth gameplay.",
   },
   frame2: {
     title: "Dukan",
     link: "https://dukan-ydp9.vercel.app/",
-    description: "Dukan app",
+    description: "I developed this web application for my jewellery shop to manage daily transactions digitally. Earlier, we used physical books to store records, which made it difficult to find specific customers and track their transactions.Although we are not using it yet, the system has been approved by my big brother and is ready to be implemented soon.",
   },
   frame3: {
     title: "LeetCode",
     link: "https://leetcode.com/u/SHIVAM7355/",
-    description: "Leet code",
+    description: "I solve problems every day to improve my problem solving skills and consistently learn new logics, patterns, and ideas through daily practice.",
   },
 };
 
@@ -353,7 +354,6 @@ leftArrow.addEventListener("pointerdown", () => {
 
 let downArrow = document.querySelector(".downArrow");
 downArrow.addEventListener("pointerdown", () => {
-
   if (intervalId) return;
 
   intervalId = setInterval(() => {
@@ -453,7 +453,7 @@ music.addEventListener("click", () => {
 });
 
 window.addEventListener("pointermove", onMouseMove);
-window.addEventListener("pointerdown", onMouseMove)
+window.addEventListener("pointerdown", onMouseMove);
 window.addEventListener("keydown", input);
 window.addEventListener("pointerup", () => onClick(intersectObject));
 window.addEventListener("resize", function () {

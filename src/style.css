@@ -139,6 +139,7 @@ canvas {
 }
 
 .detail-box {
+  border: 2px solid white;
   width: 100%;
   max-width: 700px;
   background-color: #feada1;
