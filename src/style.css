@@ -187,16 +187,22 @@ button {
 .upperArrow,
 .rightArrow,
 .leftArrow,
-.downArrow {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-
-  touch-action: none; /* Prevents browser from scrolling when you hold the button */
-  cursor: pointer; /* Makes it look like a button on desktop */
+.downArrow,
+.upperArrow i,   /* Added child 'i' */
+.rightArrow i,   /* Added child 'i' */
+.leftArrow i,    /* Added child 'i' */
+.downArrow i {   /* Added child 'i' */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none; 
+  cursor: pointer;
+  
+  /* Add this specifically for mobile icons */
+  -webkit-tap-highlight-color: transparent; 
 }
 
 @media screen and (max-width: 770px) {
